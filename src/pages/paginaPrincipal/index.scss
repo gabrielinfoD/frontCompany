@@ -1,0 +1,136 @@
+
+body{
+  background: linear-gradient(to bottom,#577590 ,#313d5a ) fixed ;
+}
+
+.pag{
+
+  text-align: center;
+  color:#fff;
+  display: flex;
+  
+  flex-direction: column;
+
+  .info{
+      display: flex;
+      flex-direction: row; 
+      margin-bottom:  90px ;
+      justify-content: center;
+      align-items: center;
+      margin-top: 75px;
+      justify-content: space-around;
+
+
+      .text{
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
+        gap: 25px;
+        text-align: left;
+      
+
+        /*h1{
+          font:  20px "Times New Roman", serif ;
+        }*/
+      }
+      img{
+        margin-right: 50px;
+        width: 420px;
+      }
+  }
+
+  .sobre{
+    color: #313d5a;
+    background-color: #fff;
+ 
+    padding: 75px  ;
+    h1{
+
+      padding-bottom: 2%;
+      
+    }
+
+    .prin{
+      font-size: 25px;
+      gap: 10px;
+    }
+
+    .prin2{
+      font-size: 25px;
+      gap: 10px;
+    }
+  }
+
+
+  .servico{
+
+    margin: 100px;
+    padding: 20px;
+
+    h1{
+
+      padding-bottom: 3%;
+
+    }
+    
+    .container {
+
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+  }
+  
+  .card {
+      color: #313d5a;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px #0000001a;
+      margin: 10px;
+      padding: 20px;
+      width: calc(25% - 40px);
+      transition: transform 0.3s;
+  }
+  
+  .card h3 {
+      margin-top: 0;
+  }
+  .card:hover {
+      transform: scale(1.05);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column; 
+    margin: 50px 0;
+  }
+
+  .info img {
+    width: 100%; 
+    margin-right: 0; 
+  }
+
+  .prin, .prin2 {
+    font-size: 20px; 
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 40px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; 
+  }
+}
+
+
+ 
+}
+
